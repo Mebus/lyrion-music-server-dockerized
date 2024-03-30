@@ -1,0 +1,7 @@
+services:
+  slimserver:
+    restart: unless-stopped
+    build: .
+    ports:
+      - "9000:9000"
+      - "3483:3483"
